@@ -1,0 +1,16 @@
+<div id="header">
+    <h3>PPM - Project Product Management</h3>
+    <h3>Product Update Page</h3>
+    <a [routerLink]="['/home']">Home</a> | <a [routerLink]="['/list']">List</a> | <a [routerLink]="['/new']">New</a>
+  </div>
+
+<form (submit)="editProductFromService()">
+    <input type="text" name="editProduct.id" [(ngModel)]="editProduct.id"><br>
+    <label for="editProduct.title">Title:</label><br>
+    <input type="text" name="editProduct.title" [(ngModel)]="editProduct.title"><br>
+    <label for="editProduct.price">Price:</label><br>
+    <input type="text" name="editProduct.price" [(ngModel)]="editProduct.price"><br>
+    <label for="editProduct.image">Image Url:</label><br>
+    <input type="text" name="editProduct.image" id="" [(ngModel)]="editProduct.image"><br>
+    <input type="submit" value="Edit">
+</form>
